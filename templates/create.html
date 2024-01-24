@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container bg-dark text-light p-5">
+    <form method="POST" action="/create/">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <!-- Additional Information -->
+        <div class="text-center mt-3">
+            <p class="lead">Craft a memorable URL with QuickSnip and share it effortlessly.</p>
+        </div>
+
+        <!-- Form Submission Button -->
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-info">Create URL</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}

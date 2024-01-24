@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container text-center mt-5">
+    <div class="alert alert-dark p-4" role="alert">
+        <h1 class="display-4 mb-4">Shortened Link:</h1>
+        <h2 class="display-5 mb-4">localhost:8000/{{ chars }}</h2>
+    </div>
+    <button id="copy" class="btn btn-info btn-lg mt-3">Copy to clipboard</button>
+</div>
+<script>
+    const btn = document.getElementById("copy")
+    btn.addEventListener("click", () => {
+        const sysInput = document.createElement("input");
+        sysInput.setAttribute("value", "localhost:8000/{{ chars }}");
+        document.body.appendChild(sysInput);
+        sysInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(sysInput)
+    });
+</script>
+{% endblock content %}

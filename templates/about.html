@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="jumbotron bg-dark text-light">
+            <h1>Welcome to QuickSnip</h1>
+            <p class="lead">QuickSnip is a powerful and user-friendly URL shortening service designed to simplify your online experience.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Our Mission</h2>
+                <p class="text-justify">At QuickSnip, our mission is to provide a seamless and efficient URL shortening service, making web experiences more convenient and enjoyable for users.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Why Choose QuickSnip?</h2>
+                <p class="text-justify">QuickSnip stands out with its instant link shortening, personalized URLs for easy recall, usage statistics tracking, and a strong emphasis on security and reliability.</p>
+            </div>
+        </div>
+
+        <div class="mt-5">
+            <h2>Meet the Team</h2>
+            <div class="card-deck">
+                <div class="card alert alert-dark" role="alert">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 1">
+                    <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">Co-founder and Developer</p>
+                    </div>
+                </div>
+                <div class="card alert alert-dark" role="alert">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Team Member 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <p class="card-text">Co-founder and Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call to Action Section -->
+    <div class="container mt-4">
+        <div class="jumbotron text-center bg-dark text-light">
+            <h2>Ready to get started?</h2>
+            <p class="lead">Create your first short link with QuickSnip today and experience the convenience!</p>
+            <a class="btn btn-primary btn-lg" href="/" role="button">Get Started</a>
+        </div>
+    </div>
+{% endblock content %}
